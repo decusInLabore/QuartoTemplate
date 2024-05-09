@@ -1,0 +1,65 @@
+project:
+  type: website
+  output-dir: ../../../../html_local/
+
+# Note: Sections that have been rendered already can be commented out in the render: section.
+# Note: All chapters, except for Main_Analysis.qmd are rendered with the .htm extension. This is to distinguish
+#       them from the top-level Main_Analysis.html files.
+
+# Annotation below
+#  #- Part of this analysis, but chapter has been created already.
+#  ##- Not part of this analysis.
+
+  render:
+    - Main_Analysis.qmd
+    - 01-test.chapter.qmd
+
+editor:
+  markdown:
+    references:
+      location: block
+      prefix: "Main_Analysis_"
+
+format: 
+    html:
+      theme: minty
+      code-fold: true
+      highlight-style: arrow
+      code-line-numbers: true
+      code-copy: true
+      df-print: paged
+      highlight: default
+      toc: true
+      toc-depth: 5
+      toc-title: Contents
+      toc-location: left
+      embed-resources: true
+      output-ext: "html"
+
+
+
+website:
+  title: "Test Report"
+  favicon: "./src/style/src/images/logo.ico"
+  sidebar:
+    logo: ./src/style/src/images/CRICK_Logotype_black_RGB.jpg
+    style: "docked"
+    search: true
+    contents:
+      - section: "Overview"
+        contents:
+          - file: Main_Analysis.html
+            text: "Analysis Overview"
+          - section: "Test"
+            contents:
+              - file: testQC.html
+                text: "Test QC"
+          - section: "Main Test"
+            contents:
+              - file: 01-test.chapter.html
+                text: "Test Chapter"
+
+
+
+
+

@@ -1,0 +1,16 @@
+---
+format:
+    html:
+        embed-rmd: true
+        output-ext: "htm"
+---
+
+```{r, eval=TRUE, echo=F, results=FALSE, message = FALSE, warning = FALSE}
+An example
+
+plot(1:10)
+```
+
+
+
+
