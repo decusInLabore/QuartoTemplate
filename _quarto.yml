@@ -1,14 +1,5 @@
 project:
   type: website
-  output-dir: ../../../../html_local/
-
-# Note: Sections that have been rendered already can be commented out in the render: section.
-# Note: All chapters, except for Main_Analysis.qmd are rendered with the .htm extension. This is to distinguish
-#       them from the top-level Main_Analysis.html files.
-
-# Annotation below
-#  #- Part of this analysis, but chapter has been created already.
-#  ##- Not part of this analysis.
 
   render:
     - Main_Analysis.qmd
@@ -18,7 +9,6 @@ editor:
   markdown:
     references:
       location: block
-      prefix: "Main_Analysis_"
 
 format: 
     html:
@@ -40,7 +30,6 @@ format:
 
 website:
   title: "Test Report"
-  favicon: "./src/style/src/images/logo.ico"
   sidebar:
     logo: ./src/style/src/images/CRICK_Logotype_black_RGB.jpg
     style: "docked"
